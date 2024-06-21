@@ -18,10 +18,40 @@ To retrieve information about buses related to a specific bus stop number, you n
 GET https://ahmetalper-atus.hf.space/where-is-my-bus/<bus_stop_no>
 ```
 
-For example, if the bus stop number is 123, the request URL would be:
+For example, if the bus stop number is 26, the request URL would be:
 
 ```http
-GET https://ahmetalper-atus.hf.space/where-is-my-bus/123
+GET https://ahmetalper-atus.hf.space/where-is-my-bus/26
+```
+Example API Response:
+
+```json
+[
+  {
+    "route_no": "56-A",
+    "name": "ŞEYH ŞAMİL",
+    "direction": "KÜLTÜRPARK",
+    "duration": 0
+  },
+  {
+    "route_no": "17-A",
+    "name": "TIRILIRMAK KAŞ",
+    "direction": "ALAADDİN",
+    "duration": 7
+  },
+  {
+    "route_no": "84-C",
+    "name": "GÖDENE TOKİ 2. ETAP",
+    "direction": "ALAADDİN",
+    "duration": 10
+  },
+  {
+    "route_no": "4-A",
+    "name": "MERAM YENİYOL ANASULTAN",
+    "direction": "ALAADDİN",
+    "duration": 13
+  }
+]
 ```
 
 ## Additional Notes
